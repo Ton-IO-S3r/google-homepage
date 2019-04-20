@@ -1,17 +1,29 @@
 body{
-    margin: 0 auto;    
+    margin: 0 0; 
+    width: 100%; 
+    height: 100%;
 }
 
-header{
+/*nav{
     position: absolute;
     width: 100%;
     z-index: 10;
-}
-.encabezado{
+}*/
+nav{
+    position: relative;
+    width: 100%;
     text-align: right;
     padding-left: 30px;
-    padding-right: 30px; 
-    margin-top: 1%;
+    padding-right: 30px;
+    height: 15%;
+    box-sizing: border-box;
+}
+.navegar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 li{
@@ -21,34 +33,105 @@ li{
 }
 
 a{
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    padding: 0.2em;
+    font-size: 13px;
+}
+
+.material-icons{
+    position: relative;
+    font-family: "Material Icons";
+    color: dimgray;
+    cursor: pointer;
+    top: 6px;
 }
 
 .contenido{
-    position: relative;
+    position: absolute;
     text-align: center;
     width: 100%;
-    height: 500px;
-    top: 300px;
+    height: 55%;
+    top: 15%;
+    box-sizing: border-box;
+}
+#logo{
+    width: 272px;
+    height: 201px;
+    padding-top: 109px;
+    box-sizing: border-box;
 }
 
-footer{
-    background-color: antiquewhite;
+.busqueda{
+    position: absolute;
+    border: solid 1px #CCC;
+    border-radius: 100px;
+    width: 35%;
+    height: 12%;
+    left: 32.5%;
+}
+
+#texto_busqueda{
+    position: relative;
+    font-size: 14px;
+    border: none;
+    height: 80%;
+    width: 80%;
+    top: 0;
+}
+#microphone{
+    position: absolute;
+    height: 1.8em;
+    top: 10%;
+}
+
+.botones{
+    position: relative;
+    top: 80px;
+    height: 40px;
+}
+
+.enviar{
+    height: 36px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    
-    height: 100px;
+    font-size: 14px;
+    color: rgb(99, 99, 99);
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 5px;
+    padding: 0 16px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    color: rgb(99, 99, 99);
+    background-color: rgb(233, 233, 233);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: 15%;
+    box-sizing: border-box;
 }
 
+.pais{
+    width: 100%;
+    height: 50%;
+    padding-left: 30px;
+    background-color: rgb(233, 233, 233);
+    border-bottom: 1px solid rgb(220, 220, 220);
+    box-sizing: border-box;
+}
 .pie_div{
     float: left;
     width: 50%;
+    height: 50%;
 }
 
 .der{
     text-align: right;
     padding-right: 30px;
     padding-left: 30px;
+    box-sizing: border-box;
 }
 
 .der li{
@@ -59,6 +142,7 @@ footer{
     text-align: left;
     padding-right: 30px;
     padding-left: 30px;
+    box-sizing: border-box;
 }
 
 .izq li{
